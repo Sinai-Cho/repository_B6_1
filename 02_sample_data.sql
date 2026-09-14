@@ -7,7 +7,7 @@
 PRAGMA foreign_keys = ON;
 
 -- 1. 사용자 10명
-INSERT INTO app_user (user_id, username, nickname, created_at) VALUES
+INSERT INTO user (user_id, username, nickname, created_at) VALUES
 (1, 'minjun01', '민준', '2026-09-01'),
 (2, 'seoyeon02', '서연', '2026-09-01'),
 (3, 'jiho03', '지호', '2026-09-02'),
