@@ -14,7 +14,7 @@ DROP TABLE IF EXISTS genre;
 DROP TABLE IF EXISTS user;
 
 -- 1. 사용자 테이블
-CREATE TABLE app_user (
+CREATE TABLE user (
     user_id     INTEGER PRIMARY KEY,
     username    TEXT NOT NULL UNIQUE,
     nickname    TEXT NOT NULL,
