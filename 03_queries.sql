@@ -54,7 +54,7 @@ ORDER BY m.movie_id;
 -- ---------------------------------------------------------
 SELECT u.nickname, m.title, r.rating
 FROM review AS r
-INNER JOIN app_user AS u
+INNER JOIN user AS u
     ON r.user_id = u.user_id
 INNER JOIN movie AS m
     ON r.movie_id = m.movie_id
@@ -76,7 +76,7 @@ ORDER BY m.movie_id;
 -- ---------------------------------------------------------
 SELECT u.nickname, m.title, g.genre_name, r.rating
 FROM review AS r
-INNER JOIN app_user AS u
+INNER JOIN user AS u
     ON r.user_id = u.user_id
 INNER JOIN movie AS m
     ON r.movie_id = m.movie_id

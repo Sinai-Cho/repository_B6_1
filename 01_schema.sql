@@ -11,7 +11,7 @@ PRAGMA foreign_keys = ON;
 DROP TABLE IF EXISTS review;
 DROP TABLE IF EXISTS movie;
 DROP TABLE IF EXISTS genre;
-DROP TABLE IF EXISTS app_user;
+DROP TABLE IF EXISTS user;
 
 -- 1. 사용자 테이블
 CREATE TABLE app_user (
@@ -49,7 +49,7 @@ CREATE TABLE review (
     rating       REAL NOT NULL CHECK (rating >= 0 AND rating <= 10),
     review_text  TEXT,
     created_at   TEXT NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES app_user(user_id),
+    FOREIGN KEY (user_id) REFERENCES user(user_id),
     FOREIGN KEY (movie_id) REFERENCES movie(movie_id),
     UNIQUE (user_id, movie_id)
 );
