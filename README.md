@@ -46,15 +46,22 @@
 ## - CHECK: 개봉 연도, 러닝타임, 평점 범위
 ## - FOREIGN KEY: 테이블 사이의 관계 보장
 
-# 9. 제출물
+# 9. 핵심 SQL (내용, 사용 sql)
+## 2020년 이후 영화	/ WHERE
+## 러닝타임 순 정렬	/ ORDER BY
+## 9점 이상 리뷰 / WHERE, ORDER BY
+## 최근 영화 5개 / LIMIT
+## 영화 + 장르 / INNER JOIN
+## 사용자 + 리뷰 + 영화 / INNER JOIN
+## 모든 영화 + 리뷰 수	/ LEFT JOIN
+## 사용자 + 영화 + 장르 + 평점	/ 다중 JOIN
+## 장르별 영화 수	/ COUNT, GROUP BY
+## 영화별 평균 평점 / AVG, GROUP BY
+## 사용자별 평점 합계 / SUM, COUNT, GROUP BY
+## 전체 평균보다 높은 리뷰	/ 서브쿼리
+## 영화 제목 인덱스 / CREATE INDEX
+## 시청 날짜 변경	/ UPDATE
+## 리뷰 삭제 / DELETE
 
-## movie_sql_db_project/
-## ├── 01_schema.sql
-## ├── 02_sample_data.sql
-## ├── 03_queries.sql
-## ├── README.md
-## ├── movie.db
-## └── results/
-##     ├── query_01.txt
-##     ├── ...
-##     └── query_15.txt
+# 10. 프로젝트 구조
+![프로젝트 구조](./images/구조.png)
