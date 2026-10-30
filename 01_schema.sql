@@ -16,8 +16,8 @@ DROP TABLE IF EXISTS user;
 -- 1. 사용자 테이블
 CREATE TABLE user (
     user_id     INTEGER PRIMARY KEY,
-    username    TEXT NOT NULL UNIQUE,
-    nickname    TEXT NOT NULL,
+    username    TEXT NOT NULL,
+    nickname    TEXT NOT NULL UNIQUE,
     created_at  TEXT NOT NULL
 );
 
