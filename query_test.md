@@ -53,12 +53,12 @@
 
 #### 위 이미지는 각 쿼리별로 한번씩 실제 테스트 진행하면서 캡쳐한 이미지
 #### 아래 명령어를 통해 한번에 실행된 결과는 query_result.txt 파일로 저장
--- .output query_result.txt (실행 결과를 해당 파일에 저장)
--- .read 03_queries.sql (sql 파일 전체 실행)
--- .output stdout (결과 출력 위치를 다시 터미널로 변경)
+- .output query_result.txt (실행 결과를 해당 파일에 저장)
+- .read 03_queries.sql (sql 파일 전체 실행)
+- .output stdout (결과 출력 위치를 다시 터미널로 변경)
 
 #### 기타 사용 명령어
--- sql 접속 : sqlite3 practice_test.db
--- .headers on : 조회 결과에 컬럼명 표시
--- . mode column : 조회 결과를 열 단위로 정렬하기
--- .quit : sql 접속 종료
+- sql 접속 : sqlite3 practice_test.db
+- .headers on : 조회 결과에 컬럼명 표시
+- . mode column : 조회 결과를 열 단위로 정렬하기
+- .quit : sql 접속 종료
