@@ -34,21 +34,21 @@
 12) 12번 쿼리 : 전체 평균보다 높은 평점의 리뷰를 찾는다
 ![](images/12번쿼리.png)
 13) 13번 쿼리 : 인덱스: 영화 제목 검색 속도를 높이기 위해 인덱스를 만든다.
--- 적용 이유: title 컬럼으로 영화를 자주 검색할 때 전체 행을
--- 하나씩 확인하는 비용을 줄일 수 있다.
--- SQLite 전용 확인 명령 PRAGMA index_list 사용.
+- 적용 이유: title 컬럼으로 영화를 자주 검색할 때 전체 행을
+- 하나씩 확인하는 비용을 줄일 수 있다.
+- SQLite 전용 확인 명령 PRAGMA index_list 사용.
 ![](images/13번쿼리.png)
 14) 14_1번 쿼리 : UPDATE: movie_id=1인 영화의 watched_date를 수정
--- watched_date를 수정 전 이미지 (테이블 데이터 확인)
+- watched_date를 수정 전 이미지 (테이블 데이터 확인)
 ![](images/14_1.png)
 15) 14_2번 쿼리
--- watched_date를 수정 후 이미지
+- watched_date를 수정 후 이미지
 ![](images/14_2.png)
 16) 15_1번 쿼리 : DELETE: review_id=20인 리뷰를 삭제
--- review_id=20인 리뷰를 삭제 전 이미지
+- review_id=20인 리뷰를 삭제 전 이미지
 ![](images/15_1.png)
 17) 15_2번 쿼리
--- review_id=20인 리뷰를 삭제 후 이미지
+- review_id=20인 리뷰를 삭제 후 이미지
 ![](images/15_2.png)
 
 #### 위 이미지는 각 쿼리별로 한번씩 실제 테스트 진행하면서 캡쳐한 이미지
