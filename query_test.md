@@ -1,8 +1,12 @@
 ### 1. DB 설치 확인, 샘플 데이터로 데이터 생성, db 활성화
-![](images/db 설치 확인.png)
-![](images/샘플데이터.png)
-![](images/테이블 생성.png)
-![](images/db 활성화 및 외래키활성화.png.png)
+1) DB 설치 확인
+![](images/db설치확인.png)
+2) 샘플데이터 입력
+![](images/샘플데이터insert.png)
+3) 테이블 생성 및 스키마 지정
+![](images/테이블생성.png)
+4) 외래키 활성화
+![](images/db활성화_외래키활성화.png)
 
 ### 2. query test
 1) 1번 쿼리 : 2020년 이후에 개봉한 영화를 확인
@@ -52,3 +56,9 @@
 -- .output query_result.txt (실행 결과를 해당 파일에 저장)
 -- .read 03_queries.sql (sql 파일 전체 실행)
 -- .output stdout (결과 출력 위치를 다시 터미널로 변경)
+
+#### 기타 사용 명령어
+-- sql 접속 : sqlite3 practice_test.db
+-- .headers on : 조회 결과에 컬럼명 표시
+-- . mode column : 조회 결과를 열 단위로 정렬하기
+-- .quit : sql 접속 종료
