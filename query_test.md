@@ -62,3 +62,19 @@
 - .headers on : 조회 결과에 컬럼명 표시
 - . mode column : 조회 결과를 열 단위로 정렬하기
 - .quit : sql 접속 종료
+
+####  FK 에러가 발생하는 경우
+1) 존재하지 않는 부모 데이터를 참조하는 경우
+```sql
+INSERT INTO review
+VALUES (21, 1, 99, 9.0, '재미있는 영화였다.', '2026-11-24');
+````
+- 이 때 99번 movie_id 는 존재하지 않으므로 아래와 같은 에러가 발생한다.
+![](images/FK_error.png)
+
+- 그러므로 아래 명령어로 영화가 실제 존재하는지 확인하고, 없다면 99번 영화를 movie 테이블에 등록한 후 리뷰를 입력해야 한다.
+```sql
+SELECT *
+FROM movie
+WHERE movie_id = 99;
+```
