@@ -113,7 +113,7 @@ ORDER BY avg_rating DESC, m.title;
 SELECT u.nickname,
        COUNT(r.review_id) AS review_count,
        SUM(r.rating) AS total_rating
-FROM app_user AS u
+FROM user AS u
 LEFT JOIN review AS r
     ON u.user_id = r.user_id
 GROUP BY u.user_id, u.nickname
