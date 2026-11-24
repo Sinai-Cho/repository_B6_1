@@ -78,3 +78,12 @@ SELECT *
 FROM movie
 WHERE movie_id = 99;
 ```
+
+2) 다른 테이블과 연결되어 있는 상태에서 해당 테이블을 삭제하는 경우
+- on delete cascade설정
+```sql
+FOREIGN KEY (movie_id)
+REFERENCES movie(movie_id)
+ON DELETE CASCADE
+````
+- 하지만 dbms별로 처리 방법이 다를 수 있다
