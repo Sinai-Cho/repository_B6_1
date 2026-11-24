@@ -132,6 +132,18 @@ title          avg_rating
 원더             8.0       
 패딩턴 2          8.0       
 주만지: 새로운 세계    7.5       
+nickname      review_count  total_rating
+------------  ------------  ------------
+happySun      2             18.5        
+shishi        2             18.5        
+dongdong      2             18.0        
+fingers09     2             18.0        
+8585by        2             17.5        
+num01         2             17.5        
+lanma         2             17.0        
+sinai486      2             17.0        
+koreaForever  2             15.5        
+turtles12     1             10.0        
 review_id  movie_id  rating
 ---------  --------  ------
 10         9         10.0  
